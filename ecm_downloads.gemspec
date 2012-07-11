@@ -31,4 +31,10 @@ Gem::Specification.new do |s|
   s.add_development_dependency "factory_girl_rails", "~> 3.0"
   s.add_development_dependency "shoulda-matchers"
   s.add_development_dependency "capybara"
+  
+  # Dummy App
+  # s.add_development_dependency "activeadmin" # Using edge active admin (see Gemfile)
+  s.add_development_dependency "sass-rails"
+  s.add_development_dependency "meta_search", ">= 1.1.0.pre"
+  s.add_development_dependency "coffee-rails"
 end
