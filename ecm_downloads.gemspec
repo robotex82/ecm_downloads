@@ -7,15 +7,28 @@ require "ecm_downloads/version"
 Gem::Specification.new do |s|
   s.name        = "ecm_downloads"
   s.version     = EcmDownloads::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of EcmDownloads."
-  s.description = "TODO: Description of EcmDownloads."
+  s.authors     = ["Roberto Vasquez Angel"]
+  s.email       = ["roberto@vasquez-angel.de"]
+  s.homepage    = "https://github.com/robotex82/ecm_downloads"
+  s.summary     = "Provides downloads for active admin."
+  s.description = "Provides downloads for active admin."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   s.add_dependency "rails", "~> 3.2.6"
 
+  # Development database
   s.add_development_dependency "sqlite3"
+  
+  # Development server
+  s.add_development_dependency "thin"
+  
+  # Documentation
+  s.add_development_dependency "yard"
+  
+  # Testing
+  s.add_development_dependency "rspec-rails", "~> 2.0"
+  s.add_development_dependency "factory_girl_rails", "~> 3.0"
+  s.add_development_dependency "shoulda-matchers"
+  s.add_development_dependency "capybara"
 end
