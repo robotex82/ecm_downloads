@@ -1,3 +1,7 @@
+I18n.default_locale = :de
+I18n.load_path += Dir[Rails.root.join('config', 'locales', '*.{rb,yml}').to_s]
+I18n.reload!
+
 ActiveAdmin.setup do |config|
 
   # == Site Title
@@ -138,7 +142,9 @@ ActiveAdmin.setup do |config|
   
   # You can provide an options hash for more control, which is passed along to stylesheet_link_tag():
   #   config.register_stylesheet 'my_print_stylesheet.css', :media => :print
-  #
+  #I18n.default_locale = :de
+I18n.load_path += Dir[Rails.root.join('config', 'locales', '*.{rb,yml}').to_s]
+I18n.reload!
   # To load a javascript file:
   #   config.register_javascript 'my_javascript.js'
 end
