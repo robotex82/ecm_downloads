@@ -1,12 +1,12 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "ecm_downloads/version"
+require "ecm/downloads/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "ecm_downloads"
-  s.version     = EcmDownloads::VERSION
+  s.version     = Ecm::Downloads::VERSION
   s.authors     = ["Roberto Vasquez Angel"]
   s.email       = ["roberto@vasquez-angel.de"]
   s.homepage    = "https://github.com/robotex82/ecm_downloads"

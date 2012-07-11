@@ -1,2 +1,1 @@
-module EcmDownloads
-end
+require 'ecm/downloads/engine'
