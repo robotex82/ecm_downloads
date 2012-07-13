@@ -4,9 +4,7 @@ require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
 require 'rspec/autorun'
 
-# Factory girl
-require 'factory_girl'
-FactoryGirl.find_definitions
+# Factory girl is loaded from support/factory_girl.rb
 
 # Shoulda
 require 'shoulda/matchers'

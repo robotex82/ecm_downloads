@@ -20,6 +20,13 @@ RDoc::Task.new(:rdoc) do |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
 end
 
+# travis ci
+task :default => [:spec]
+desc 'run Rspec specs'
+task :spec do
+  sh 'cd ./spec/dummy && rspec && cd ../../'
+end
+
 
 
 

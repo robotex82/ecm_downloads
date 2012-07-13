@@ -19,6 +19,9 @@ gem "jquery-rails"
 # Edge active admin
 gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
 
+# Local absence validator
+gem 'rails_tools-absence_validator', :path => '/home/robo/rails/rails_tools-absence_validator-master'
+
 # Travis CI
 unless ENV['TRAVIS_RUBY_VERSION'].nil?
   gem 'pg'

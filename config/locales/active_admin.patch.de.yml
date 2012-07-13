@@ -23,7 +23,7 @@ de:
     failure:
       admin_user:
         invalid: Benutzername oder Kennwort nicht korrekt.
-        unauthenticated: "Bitte melden Sie sich als Administrator an."
+        unauthenticated: Bitte melden Sie sich als Administrator an.
     sessions:
       admin_user:
-        signed_in: "Erfolgreich als Administrator angemeldet."
+        signed_in: Erfolgreich als Administrator angemeldet.

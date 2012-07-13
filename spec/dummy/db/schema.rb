@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120711153321) do
+ActiveRecord::Schema.define(:version => 20120713175622) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -45,5 +45,38 @@ ActiveRecord::Schema.define(:version => 20120711153321) do
 
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
   add_index "admin_users", ["reset_password_token"], :name => "index_admin_users_on_reset_password_token", :unique => true
+
+  create_table "ecm_downloads_download_categories", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "locale"
+    t.integer  "position"
+    t.integer  "ecm_downloads_downloads_count", :default => 0, :null => false
+    t.integer  "parent_id"
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.integer  "depth"
+    t.string   "slug"
+    t.datetime "created_at",                                   :null => false
+    t.datetime "updated_at",                                   :null => false
+  end
+
+  create_table "ecm_downloads_downloads", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.string   "locale"
+    t.integer  "ecm_downloads_download_category_id"
+    t.integer  "position"
+    t.string   "slug"
+    t.string   "asset_file_name"
+    t.integer  "asset_file_size"
+    t.string   "asset_content_type"
+    t.datetime "asset_updated_at"
+    t.string   "asset_fingerprint"
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
+  end
+
+  add_index "ecm_downloads_downloads", ["ecm_downloads_download_category_id"], :name => "index_ecm_downloads_downloads_on_download_category_id"
 
 end
