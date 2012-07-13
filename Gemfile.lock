@@ -24,12 +24,7 @@ PATH
       friendly_id (~> 4.0.7)
       paperclip (~> 2.7)
       rails (~> 3.2.6)
-
-PATH
-  remote: /home/robo/rails/rails_tools-absence_validator-master
-  specs:
-    rails_tools-absence_validator (0.0.1)
-      rails (~> 3.2.5)
+      rails_tools-absence_validator (~> 0.0.1)
 
 GEM
   remote: http://rubygems.org/
@@ -163,6 +158,8 @@ GEM
       activesupport (= 3.2.6)
       bundler (~> 1.0)
       railties (= 3.2.6)
+    rails_tools-absence_validator (0.0.1)
+      rails (~> 3.2.5)
     railties (3.2.6)
       actionpack (= 3.2.6)
       activesupport (= 3.2.6)
@@ -233,7 +230,6 @@ DEPENDENCIES
   factory_girl_rails (~> 3.0)
   jquery-rails
   meta_search (>= 1.1.0.pre)
-  rails_tools-absence_validator!
   rspec-rails (~> 2.0)
   sass-rails
   shoulda-matchers

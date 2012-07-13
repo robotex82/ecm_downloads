@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency "awesome_nested_set", "~> 2.1.3"
   s.add_dependency "friendly_id", "~> 4.0.7"
   s.add_dependency "paperclip", "~> 2.7"
+  s.add_dependency "rails_tools-absence_validator", "~>0.0.1"
 
   # Development database
   s.add_development_dependency "sqlite3"
