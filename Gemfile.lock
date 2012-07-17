@@ -20,18 +20,13 @@ PATH
   specs:
     ecm_downloads (0.0.1)
       active_admin-acts_as_list
+      active_admin-awesome_nested_set
       acts_as_list (~> 0.1.6)
       awesome_nested_set (~> 2.1.3)
       friendly_id (~> 4.0.7)
       paperclip (~> 2.7)
       rails (~> 3.2.6)
       rails_tools-absence_validator (~> 0.0.1)
-
-PATH
-  remote: /home/robo/rails/active_admin-awesome_nested_set
-  specs:
-    active_admin-awesome_nested_set (0.0.1)
-      rails (~> 3.2.5)
 
 GEM
   remote: http://rubygems.org/
@@ -50,6 +45,8 @@ GEM
       rack-test (~> 0.6.1)
       sprockets (~> 2.1.3)
     active_admin-acts_as_list (0.0.6)
+      rails (~> 3.2.5)
+    active_admin-awesome_nested_set (0.0.1)
       rails (~> 3.2.5)
     activemodel (3.2.6)
       activesupport (= 3.2.6)
@@ -232,7 +229,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_admin-awesome_nested_set!
   activeadmin!
   capybara
   coffee-rails
