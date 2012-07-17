@@ -31,4 +31,19 @@ class Ecm::Downloads::DownloadCategory < ActiveRecord::Base
   validates :locale, :presence => true, :if => :root?
   validates :locale, :inclusion => { :in => I18n.available_locales.map(&:to_s) }, :unless => Proc.new { |cc| cc.locale.blank? }
   validates :locale, :absence => true, :unless => :root? 
+  
+  # public methods
+  
+  # public methods
+  def index_name
+    if self.root?
+      "[#{self.locale}] #{self.name}"
+    else
+      "#{'&#160;&#160;&#160;&#160;' * self.level} |--&#160;#{self.name}".html_safe
+    end  
+  end
+  
+  def to_s
+    name
+  end  
 end

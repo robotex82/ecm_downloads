@@ -1,0 +1,24 @@
+--- 
+de: 
+  activerecord: 
+    attributes: 
+      ecm/downloads/download: 
+        asset: Datei
+        asset_content_type: Datei Content-Type
+        asset_file_name: Dateiname
+        asset_file_size: Dateigröße
+        asset_fingerprint: Fingerabdruck
+        asset_updated_at: Datei aktualisiert am
+        created_at: Erstellt am
+        description: Beschreibung
+        ecm_downloads_download_category: Download Kategorie        
+        ecm_downloads_download_category_id: Download Kategorie
+        locale: Sprache
+        name: Name
+        position: Position
+        slug: Freundliche ID
+        updated_at: Aktualisiert am
+    models: 
+      ecm/downloads/download: 
+        one: Download
+        other: Downloads

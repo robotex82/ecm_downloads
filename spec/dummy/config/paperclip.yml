@@ -1,0 +1,17 @@
+development: &non_production_settings
+  url: "/system/:class/:id/:attachment/:basename-:style.:extension"
+  path: ":rails_root/public:url"
+
+test:
+  url: "/system/:class/:id/:attachment/:basename-:style.:extension"
+  path: ":rails_root/public:url"
+
+staging:
+  url: "/system/:class/:id/:attachment/:basename-:style.:extension"
+  path: ":rails_root/public:url"
+
+production:
+  url: "/system/:class/:id/:attachment/:basename-:style.:extension"
+  path: ":rails_root/public:url"
+  storage: ":s3"
+  bucket: "my-bucket"

@@ -1,0 +1,24 @@
+--- 
+en: 
+  activerecord: 
+    attributes: 
+      ecm/downloads/download_category: 
+        children: children
+        created_at: created at
+        depth: depth
+        description: description
+        ecm_downloads_downloads: downloads
+        ecm_downloads_downloads_count: downloads
+        lft: left
+        locale: locale
+        name: name
+        parent: parent         
+        parent_id: parent 
+        position: position
+        rgt: right
+        slug: friendly id
+        updated_at: updated at
+    models: 
+      ecm/downloads/download_category: 
+        one: download category
+        other: download categories

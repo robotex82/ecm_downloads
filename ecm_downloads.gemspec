@@ -16,6 +16,8 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   s.add_dependency "rails", "~> 3.2.6"
+  s.add_dependency "active_admin-acts_as_list"
+#  s.add_dependency "active_admin-awesome_nested_set"
   s.add_dependency "acts_as_list", "~> 0.1.6"  
   s.add_dependency "awesome_nested_set", "~> 2.1.3"
   s.add_dependency "friendly_id", "~> 4.0.7"
