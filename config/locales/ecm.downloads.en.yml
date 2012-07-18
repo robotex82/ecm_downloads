@@ -3,3 +3,11 @@ en:
     downloads:
       active_admin:
         menu: "Downloads"
+      download:
+        actions:
+          start_download: "Download now"  
+      download_category:
+        actions:
+          back_to_index: "Back to the index"
+        messages:
+          no_downloads_available: "There are now downloads in this category."          

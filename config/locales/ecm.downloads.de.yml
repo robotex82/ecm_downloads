@@ -6,3 +6,8 @@ de:
       download:
         actions:
           start_download: "Jetzt herunterladen"  
+      download_category:
+        actions:
+          back_to_index: "Zurück zur Übersicht"
+        messages:
+          no_downloads_available: "Keine Downloads in dieser Kategorie vorhanden."  

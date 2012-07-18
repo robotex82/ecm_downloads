@@ -1,11 +1,9 @@
-<h1>Download Kategorie</h1>
-
-<div class="download_categories-tree">
-  <%= nested_li(@download_category.descendants) do |download_category| %>
-    <%= link_to download_category.tree_name, download_category %>
-  <% end %>
-</div>
+<h1><%= Ecm::Downloads::DownloadCategory.model_name.human %></h1>
 
 <%= render @download_category %>
 
-<%= link_to(Ecm::Downloads::DownloadCategory.human_attribute_name(:parent), @download_category.parent) unless @download_category.root? %>
+<% if @download_category.root? %>
+  <%= link_to t('ecm.downloads.download_category.actions.back_to_index'), ecm_downloads_download_categories_path %>
+<% else %>
+  <%= link_to(Ecm::Downloads::DownloadCategory.human_attribute_name(:parent), @download_category.parent) %>
+<% end %>
