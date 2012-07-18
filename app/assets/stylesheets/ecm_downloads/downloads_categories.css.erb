@@ -2,7 +2,7 @@
   background-color: white;
 }
 
-.download_categories-tree ul {
+ul.tree, ul.tree ul {
   background-color: inherit;
   list-style-type: none;
   background-image: url("<%= asset_path 'ecm_downloads/download_categories/vertical_line.png' %>");
@@ -11,11 +11,11 @@
   padding: 0;  
 }
 
-.download_categories-tree ul ul {
+.tree ul {
   margin-left: 10px;
 }
 
-.download_categories-tree ul li {
+ul.tree li {
   margin: 0; 
   padding: 0 12px;
   line-height: 20px; 
@@ -23,7 +23,7 @@
   background-repeat: no-repeat; 
 }
 
-.download_categories-tree ul li:last-child { 
+ul.tree li:last-child { 
   background-color: white;
   background-image: url("<%= asset_path 'ecm_downloads/download_categories/last_node.png' %>") !important; 
   background-repeat: no-repeat; 

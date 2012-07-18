@@ -2,11 +2,16 @@
   <h2 class="downloads_category-name"><%= download_category.name %></h2>
   
   <div class="download_categories-tree">
-    <%= nested_li(@download_category.descendants) do |download_category| %>
-      <%= link_to download_category.tree_name, download_category %>
-    <% end %>
+      <%= nested_li(@download_category.descendants, {}) do |download_category| %>
+        <%= link_to download_category.tree_name, download_category %>
+      <% end %>
   </div>
 
+  <% unless download_category.description.blank? %>
+    <div class="download_categories-description">
+      <p><%= download_category.description %></p>
+    </div>
+  <% end %>
   
   <div class="download_category-downloads">
     <h2><%= Ecm::Downloads::DownloadCategory.human_attribute_name(:ecm_downloads_downloads) %></h2>  

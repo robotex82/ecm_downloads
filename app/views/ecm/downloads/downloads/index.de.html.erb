@@ -1,1 +1,3 @@
-<h1>downloads#index</h1>
+<h1><%= Ecm::Downloads::Download.model_name.human(:count => :other) %></h1>
+
+<%= render @downloads %>

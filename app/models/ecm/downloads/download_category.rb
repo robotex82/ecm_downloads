@@ -48,10 +48,12 @@ class Ecm::Downloads::DownloadCategory < ActiveRecord::Base
   end
   
   def tree_name
+    root_prefix = (self.root?) ? "[#{self.locale}] " : ""
+      
     if ecm_downloads_downloads_count < 1
-      "#{to_s}" 
+      "#{root_prefix}#{to_s}" 
     else 
-      "#{to_s} (#{ecm_downloads_downloads_count})"     
+      "#{root_prefix}#{to_s} (#{ecm_downloads_downloads_count})"     
     end
   end 
 end

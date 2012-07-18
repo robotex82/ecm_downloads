@@ -2,6 +2,4 @@
 
 <%= render @download %>
 
-<hr />
-
-<%= link_to Ecm::Downloads::Download.human_attribute_name(:parent), @download.ecm_downloads_download_category %>
+<%= link_to @download.ecm_downloads_download_category, @download.ecm_downloads_download_category %>

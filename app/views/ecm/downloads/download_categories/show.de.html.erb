@@ -2,8 +2,10 @@
 
 <%= render @download_category %>
 
+<p>
 <% if @download_category.root? %>
   <%= link_to t('ecm.downloads.download_category.actions.back_to_index'), ecm_downloads_download_categories_path %>
 <% else %>
   <%= link_to(Ecm::Downloads::DownloadCategory.human_attribute_name(:parent), @download_category.parent) %>
 <% end %>
+</p>

@@ -1,5 +1,5 @@
 <div class="download" id="download-<%= download.id %>">
-  <h2><%= download.name %></h2>
+  <h2><%= download.heading_name %></h2>
   <ul>
     <li class="download-asset_file_name"><%= Ecm::Downloads::Download.human_attribute_name(:asset_file_name) %>: <%= download.asset_file_name %></li>
     <li class="download-asset_file_size"><%= Ecm::Downloads::Download.human_attribute_name(:asset_file_size) %>: <%= number_to_human_size(download.asset_file_size) %></li>
@@ -7,10 +7,12 @@
     <li class="download-updated_at"><%= Ecm::Downloads::Download.human_attribute_name(:updated_at) %>: <%= l download.updated_at %></li>
   </ul> 
   <% unless download.description.blank? %>
-  <div class="download-description"><%= download.description %></div>
+  <div class="download-description">
+    <p><%= download.description %></p>
+  </div>
   <% end %>
   <div class="download-actions">
-    <%= link_to t('ecm.downloads.download.actions.start_download'), download.asset.url %>
+    <p><%= link_to t('ecm.downloads.download.actions.start_download'), download.asset.url, { :class => 'download-link button' } %></p>
   </div>
 </div>
 
