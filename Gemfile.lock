@@ -23,6 +23,7 @@ PATH
       active_admin-awesome_nested_set
       acts_as_list (~> 0.1.6)
       awesome_nested_set (~> 2.1.3)
+      awesome_nested_set-tools
       friendly_id (~> 4.0.7)
       paperclip (~> 2.7)
       rails (~> 3.2.6)
@@ -69,6 +70,8 @@ GEM
     arel (3.0.2)
     awesome_nested_set (2.1.3)
       activerecord (>= 3.0.0)
+    awesome_nested_set-tools (0.0.1)
+      rails (~> 3.2.5)
     bcrypt-ruby (3.0.1)
     bourbon (2.1.1)
       sass (>= 3.1)

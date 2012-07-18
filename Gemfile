@@ -19,7 +19,7 @@ gem "jquery-rails"
 # Edge active admin
 gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
 
-# gem 'active_admin-awesome_nested_set', :path => '/home/robo/rails/active_admin-awesome_nested_set'
+# gem 'awesome_nested_set-tools', :path => '/home/robo/rails/modules/awesome_nested_set-tools'
 
 # Travis CI
 unless ENV['TRAVIS_RUBY_VERSION'].nil?
