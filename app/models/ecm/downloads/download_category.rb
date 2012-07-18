@@ -45,5 +45,13 @@ class Ecm::Downloads::DownloadCategory < ActiveRecord::Base
   
   def to_s
     name
-  end  
+  end
+  
+  def tree_name
+    if ecm_downloads_downloads_count < 1
+      "#{to_s}" 
+    else 
+      "#{to_s} (#{ecm_downloads_downloads_count})"     
+    end
+  end 
 end

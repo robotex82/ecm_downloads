@@ -1,0 +1,11 @@
+<h1>Examples</h1>
+
+<ul>
+  <li><%= Ecm::Downloads::DownloadCategory.model_name.human(:count => :other) %>#<%= link_to "index", ecm_downloads_download_categories_path %></li>
+  <li><%= Ecm::Downloads::DownloadCategory.model_name.human %>#show: <%= link_to "show", @ecm_downloads_download_category %></li>
+</ul>    
+
+<ul>
+  <li><%= Ecm::Downloads::Download.model_name.human(:count => :other) %>#<%= link_to "index", ecm_downloads_downloads_path %></li>
+  <li><%= Ecm::Downloads::Download.model_name.human %>#show: <%= link_to "show", @ecm_downloads_download %></li>
+</ul>    

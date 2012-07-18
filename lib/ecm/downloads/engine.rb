@@ -8,6 +8,9 @@ module Ecm
         end
       end if defined?(::ActiveAdmin)
       
+      # controllers
+      # paths["app/controllers"] << File.dirname(__FILE__) + '/../../../app/controllers'
+      
       # locales
       paths["config/locales"] << File.dirname(__FILE__) + '/../../../config/locales'
     end

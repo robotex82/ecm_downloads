@@ -1,0 +1,30 @@
+.download_categories-tree {
+  background-color: white;
+}
+
+.download_categories-tree ul {
+  background-color: inherit;
+  list-style-type: none;
+  background-image: url("<%= asset_path 'ecm_downloads/download_categories/vertical_line.png' %>");
+  background-repeat: repeat-y;
+  margin: 0; 
+  padding: 0;  
+}
+
+.download_categories-tree ul ul {
+  margin-left: 10px;
+}
+
+.download_categories-tree ul li {
+  margin: 0; 
+  padding: 0 12px;
+  line-height: 20px; 
+  background: url("<%= asset_path 'ecm_downloads/download_categories/node.png' %>"); 
+  background-repeat: no-repeat; 
+}
+
+.download_categories-tree ul li:last-child { 
+  background-color: inherit;
+  background-image: url("<%= asset_path 'ecm_downloads/download_categories/last_node.png' %>") !important; 
+  background-repeat: no-repeat; 
+}

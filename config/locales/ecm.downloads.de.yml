@@ -3,3 +3,6 @@ de:
     downloads:
       active_admin:
         menu: "Downloads"
+      download:
+        actions:
+          start_download: "Jetzt herunterladen"  
