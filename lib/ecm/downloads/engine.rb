@@ -1,6 +1,8 @@
 module Ecm
   module Downloads
     class Engine < Rails::Engine
+     #  endpoint 
+      
       # active admin
       initializer :ecm_courses_engine do
         ::ActiveAdmin.setup do |active_admin_config|
@@ -10,6 +12,11 @@ module Ecm
       
       # controllers
       # paths["app/controllers"] << File.dirname(__FILE__) + '/../../../app/controllers'
+      
+      # helpers
+      config.to_prepare do
+        ApplicationController.helper(Ecm::Downloads::DownloadCategoryHelper)
+      end 
       
       # locales
       paths["config/locales"] << File.dirname(__FILE__) + '/../../../config/locales'

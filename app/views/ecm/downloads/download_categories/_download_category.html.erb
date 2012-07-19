@@ -2,7 +2,7 @@
   <h2 class="downloads_category-name"><%= download_category.name %></h2>
   
   <div class="download_categories-tree">
-      <%= nested_li(@download_category.descendants, {}) do |download_category| %>
+      <%= nested_li(download_category.descendants, {}) do |download_category| %>
         <%= link_to download_category.tree_name, download_category %>
       <% end %>
   </div>

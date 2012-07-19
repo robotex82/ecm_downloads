@@ -35,6 +35,11 @@ class Ecm::Downloads::DownloadCategory < ActiveRecord::Base
   # public methods
   
   # public methods
+  
+  def display_code
+    "<%= render_download_category '#{self.name}' %>"
+  end
+  
   def index_name
     if self.root?
       "[#{self.locale}] #{self.name}"

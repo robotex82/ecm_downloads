@@ -51,6 +51,18 @@ if defined?(ActiveAdmin)
         end
       end
       
+      panel Ecm::Downloads::DownloadCategory.human_attribute_name(:display_code) do
+        div do
+          ecm_downloads_download_category.display_code
+        end
+      end 
+      
+      panel Ecm::Downloads::DownloadCategory.human_attribute_name(:link) do
+        div do
+          ecm_downloads_download_category_path(I18n.locale, ecm_downloads_download_category)
+        end
+      end               
+      
       panel Ecm::Downloads::DownloadCategory.human_attribute_name(:children) do
         table_for ecm_downloads_download_category.children, :i18n => Ecm::Downloads::DownloadCategory do
 #          column(:name) { |ecm_downloads_download| link_to ecm_downloads_download, [:admin, ecm_downloads_download] }

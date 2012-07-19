@@ -6,8 +6,11 @@ en:
       download:
         actions:
           start_download: "Download now"  
+        messages:
+          not_found: "Download \"%{name}\" not found."
       download_category:
         actions:
           back_to_index: "Back to the index"
         messages:
+          not_found: "Download category \"%{name}\" not found."
           no_downloads_available: "There are now downloads in this category."          
