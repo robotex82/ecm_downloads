@@ -1,5 +1,9 @@
 <div class="download_category" id="download_category-<%= download_category.id %>">
-  <h2 class="downloads_category-name"><%= download_category.name %></h2>
+  <% if action_name == 'show' %>
+    <h1 class="downloads_category-name"><%= download_category.name %></h1>
+  <% else %>
+    <h2 class="downloads_category-name"><%= download_category.name %></h2>
+  <% end %>  
   
   <div class="download_categories-tree">
       <%= nested_li(download_category.descendants, {}) do |download_category| %>
