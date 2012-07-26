@@ -1,5 +1,5 @@
 <div class="download" id="download-<%= download.id %>">
-  <h2><%= download.heading_name %></h2>
+  <h2><span class="download-locale"><%= download.locale %></span><span class="download-name"><%= download.name %></span></h2>
   <ul>
     <li class="download-asset_file_name"><%= Ecm::Downloads::Download.human_attribute_name(:asset_file_name) %>: <%= download.asset_file_name %></li>
     <li class="download-asset_file_size"><%= Ecm::Downloads::Download.human_attribute_name(:asset_file_size) %>: <%= number_to_human_size(download.asset_file_size) %></li>

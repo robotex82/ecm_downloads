@@ -69,10 +69,10 @@ class Ecm::Downloads::Download < ActiveRecord::Base
   
   # public methods
   
-  def heading_name
-    locale_prefix = (locale.blank?) ? "" : "[#{locale}] "
-    "#{locale_prefix}#{name}"
-  end
+#  def heading_name
+#    locale_prefix = (locale.blank?) ? "" : "[#{locale}] "
+#    "#{locale_prefix}#{name}"
+#  end
   
   def to_s
     name
