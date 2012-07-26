@@ -1,4 +1,4 @@
-<div class="download_category" id="download_category-<%= download_category.id %>">
+<div class="download_category category" id="download_category-<%= download_category.id %>">
   <% if action_name == 'show' %>
     <h1 class="downloads_category-name"><%= download_category.name %></h1>
   <% else %>
@@ -17,7 +17,7 @@
     </div>
   <% end %>
   
-  <div class="download_category-downloads">
+  <div class="download_category-downloads item_list">
     <h2><%= Ecm::Downloads::DownloadCategory.human_attribute_name(:ecm_downloads_downloads) %></h2>  
     <% if download_category.ecm_downloads_downloads_count == 0 %>
       <%= t('ecm.downloads.download_category.messages.no_downloads_available') %>
