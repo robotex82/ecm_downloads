@@ -34,15 +34,23 @@ Gem::Specification.new do |s|
   # Documentation
   s.add_development_dependency "yard"
   
-  # Testing
-  s.add_development_dependency "rspec-rails", "~> 2.0"
-  s.add_development_dependency "factory_girl_rails", "~> 3.0"
-  s.add_development_dependency "shoulda-matchers"
-  s.add_development_dependency "capybara"
+  # Active admin
+  s.add_development_dependency 'sass-rails'
+  s.add_development_dependency 'coffee-rails' 
   
-  # Dummy App
-  # s.add_development_dependency "activeadmin" # Using edge active admin (see Gemfile)
-  s.add_development_dependency "sass-rails"
-  s.add_development_dependency "meta_search", ">= 1.1.0.pre"
-  s.add_development_dependency "coffee-rails"
+  # Tests
+  s.add_development_dependency 'capybara'    
+  s.add_development_dependency 'rspec-rails', '~> 2.0'  
+  s.add_development_dependency 'shoulda-matchers'
+  s.add_development_dependency 'factory_girl_rails', '~> 1.0'
+  
+  
+  # Fake Data Generation
+  s.add_development_dependency 'ffaker'  
+  s.add_development_dependency 'forgery', '0.5.0'
+  
+  # Test automation
+  # s.add_development_dependency 'guard-rails' # See gemfile for a patched version, for engine support.
+  s.add_development_dependency 'guard-rspec'
+  s.add_development_dependency 'guard-bundler'  
 end

@@ -16,10 +16,11 @@ gem "jquery-rails"
 # To use debugger
 # gem 'debugger'
 
+# Patched guard rails
+gem 'guard-rails',  :git => 'git://github.com/robotex82/guard-rails.git', :branch => 'better-engine-support'
+
 # Edge active admin
 gem 'activeadmin', :git => 'git://github.com/gregbell/active_admin.git'
-
-# gem 'awesome_nested_set-tools', :path => '/home/robo/rails/modules/awesome_nested_set-tools'
 
 # Travis CI
 unless ENV['TRAVIS_RUBY_VERSION'].nil?
