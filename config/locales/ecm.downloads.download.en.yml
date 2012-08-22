@@ -16,6 +16,7 @@ en:
         locale: locale
         name: name
         position: position
+        published: published
         slug: friendly id
         updated_at: updated at
     models: 

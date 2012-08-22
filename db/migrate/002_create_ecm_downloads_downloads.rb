@@ -3,17 +3,17 @@ class CreateEcmDownloadsDownloads < ActiveRecord::Migration
     create_table :ecm_downloads_downloads do |t|
       t.string :name
       t.text :description
-      t.string :locale
-      
+      t.timestamp :published_at
+
       # references
       t.references :ecm_downloads_download_category
-      
+
       # acts as list
       t.integer :position
-      
+
       # friendly id
       t.string :slug
-      
+
       # paperclip
       # t.attachment :asset
       t.string :asset_file_name
@@ -24,6 +24,8 @@ class CreateEcmDownloadsDownloads < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :ecm_downloads_downloads, :ecm_downloads_download_category_id,:name => 'index_ecm_downloads_downloads_on_download_category_id'
+    add_index :ecm_downloads_downloads,
+              :ecm_downloads_download_category_id,
+              :name => 'index_ecm_downloads_downloads_on_download_category_id'
   end
 end

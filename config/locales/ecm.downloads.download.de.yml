@@ -16,6 +16,7 @@ de:
         locale: Sprache
         name: Name
         position: Position
+        published: Veröffentlicht
         slug: Freundliche ID
         updated_at: Aktualisiert am
     models: 
