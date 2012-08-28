@@ -31,6 +31,18 @@ if defined?(ActiveAdmin)
         f.input :name
         f.input :description
       end
+      
+      f.inputs do
+        f.has_many :ecm_downloads_downloads do |d|
+          if d.object.persisted?
+            d.input :_destroy, :as => :boolean, :label => I18n.t('active_admin.delete')
+          end
+          d.input :asset, :as => :file
+          d.input :name
+          d.input :published, :as => :boolean
+          d.input :description
+        end
+      end  
 
       f.actions
     end

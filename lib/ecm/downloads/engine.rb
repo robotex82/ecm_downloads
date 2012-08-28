@@ -11,6 +11,7 @@ module Ecm
       # helpers
       config.to_prepare do
         ApplicationController.helper(Ecm::Downloads::DownloadCategoryHelper)
+        ApplicationController.helper(Ecm::Downloads::DownloadHelper)
       end 
       
       # locales
