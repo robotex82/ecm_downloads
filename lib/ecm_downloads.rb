@@ -11,4 +11,12 @@ require 'rails_tools-absence_validator'
 require 'paperclip'
 
 require 'ecm/downloads/engine'
+require 'ecm/downloads/configuration'
 require 'ecm/downloads/routing'
+
+module Ecm
+  module Downloads
+    extend Configuration
+  end
+end
+

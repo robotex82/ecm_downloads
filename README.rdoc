@@ -12,7 +12,31 @@ TODO
 
 = Installation
 
-TODO
+Add the gem to your bundle:
+
+  # Gemfile
+  gem 'ecm_downloads'
+  
+Install your bundle:  
+  
+  > bundle install
+  
+Generate initializer:
+
+  > rails generate ecm:downloads:install 
+
+Add migrations:
+
+  > rake ecm_downloads_engine:install:migrations
+  
+Migrate:
+
+  > rake db:migrate
+  
+Add the routes:
+
+  # config/routes.rb
+  Ecm::Downloads::Routing.routes(self)
   
 = Usage
 

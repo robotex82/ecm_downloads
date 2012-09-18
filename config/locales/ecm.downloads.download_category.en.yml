@@ -1,8 +1,8 @@
---- 
-en: 
-  activerecord: 
-    attributes: 
-      ecm/downloads/download_category: 
+---
+en:
+  activerecord:
+    attributes:
+      ecm/downloads/download_category:
         children: children
         created_at: created at
         depth: depth
@@ -12,13 +12,16 @@ en:
         lft: left
         locale: locale
         name: name
-        parent: parent         
-        parent_id: parent 
+        parent: parent
+        parent_id: parent
         position: position
         rgt: right
         slug: friendly id
         updated_at: updated at
-    models: 
-      ecm/downloads/download_category: 
+    models:
+      ecm/downloads/download_category:
         one: download category
         other: download categories
+  resources:
+    ecm_downloads_download_categories: download-categories
+

@@ -1,8 +1,8 @@
---- 
-de: 
-  activerecord: 
-    attributes: 
-      ecm/downloads/download: 
+---
+de:
+  activerecord:
+    attributes:
+      ecm/downloads/download:
         asset: Datei
         asset_content_type: Datei Content-Type
         asset_file_name: Dateiname
@@ -11,7 +11,7 @@ de:
         asset_updated_at: Datei aktualisiert am
         created_at: Erstellt am
         description: Beschreibung
-        ecm_downloads_download_category: Download Kategorie        
+        ecm_downloads_download_category: Download Kategorie
         ecm_downloads_download_category_id: Download Kategorie
         locale: Sprache
         name: Name
@@ -19,7 +19,10 @@ de:
         published: Veröffentlicht
         slug: Freundliche ID
         updated_at: Aktualisiert am
-    models: 
-      ecm/downloads/download: 
+    models:
+      ecm/downloads/download:
         one: Download
         other: Downloads
+  resources:
+    ecm_downloads_downloads: downloads
+

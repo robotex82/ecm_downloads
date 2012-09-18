@@ -1,9 +1,9 @@
---- 
-en: 
-  activerecord: 
-    attributes: 
-      ecm/downloads/download: 
-        asset: file      
+---
+en:
+  activerecord:
+    attributes:
+      ecm/downloads/download:
+        asset: file
         asset_content_type: content type
         asset_file_name: filename
         asset_file_size: filesize
@@ -11,7 +11,7 @@ en:
         asset_updated_at: file updated at
         created_at: created at
         description: description
-        ecm_downloads_download_category: download category        
+        ecm_downloads_download_category: download category
         ecm_downloads_download_category_id: download category
         locale: locale
         name: name
@@ -19,7 +19,10 @@ en:
         published: published
         slug: friendly id
         updated_at: updated at
-    models: 
-      ecm/downloads/download: 
+    models:
+      ecm/downloads/download:
         one: download
         other: downloads
+  resources:
+    ecm_downloads_downloads: downloads
+
