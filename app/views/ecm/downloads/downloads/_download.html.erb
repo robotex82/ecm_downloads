@@ -12,7 +12,11 @@
   </div>
   <% end %>
   <div class="download-actions">
-    <p><%= link_to t('ecm.downloads.download.actions.start_download'), download.asset.url, { :class => 'download-link button' } %></p>
+    <p>
+      <%= link_to(download.asset.url, { :class => 'download-link btn' }) do %>
+        <i class="icon-download"></i> <%= t('ecm.downloads.download.actions.start_download') %>
+      <% end %>
+    </p>
   </div>
 </div>
 
