@@ -1,7 +1,7 @@
 <h1><%= Ecm::Downloads::DownloadCategory.model_name.human(:count => :other) %></h1>
 
 <div class="download_categories-tree">
-  <%= nested_li(@download_categories, {}) do |download_category| %>
+  <%= nested_li(@download_categories, {}) do |download_category, level| %>
     <%= link_to download_category.tree_name, download_category %>
   <% end %>
 </div>
