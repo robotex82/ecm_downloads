@@ -2,9 +2,8 @@ Dummy::Application.routes.draw do
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
-  
-  resources :ecm_downloads_download_categories, :only => [ :index, :show ], :controller => 'ecm/downloads/download_categories'
-  resources :ecm_downloads_downloads, :only => [ :index, :show ], :controller => 'ecm/downloads/downloads'
+
+  Ecm::Downloads::Routing.routes(self)
 
   root :to => 'home#index'
 

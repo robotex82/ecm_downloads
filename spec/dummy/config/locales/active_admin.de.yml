@@ -1,0 +1,5 @@
+de:
+  active_admin:
+    devise:
+      login:
+        submit: Login
