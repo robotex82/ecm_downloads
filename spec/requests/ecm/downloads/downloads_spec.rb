@@ -7,6 +7,7 @@ describe 'Downloads' do
 
   before do
     set_resource_class
+    @path_prefix = ''
     @resource_path = @resource_class.to_s.underscore.gsub('/', '_').pluralize
     @resource_factory_name = @resource_class.to_s.underscore.gsub('/', '_').to_sym
   end # background
@@ -14,7 +15,7 @@ describe 'Downloads' do
   describe 'show' do
     before do
       @resource = FactoryGirl.create(@resource_factory_name, :published => true)
-      get "/#{@resource_path}/#{@resource.to_param}"
+      get "#{@path_prefix}/#{@resource_path}/#{@resource.to_param}"
     end
 
     it "request should be successful" do
@@ -28,7 +29,7 @@ describe 'Downloads' do
 
   describe 'index' do
     before do
-      get "/#{@resource_path}"
+      get "#{@path_prefix}/#{@resource_path}"
     end
 
     it "request should be successful" do

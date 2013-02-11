@@ -47,8 +47,8 @@ Gem::Specification.new do |s|
 
 
   # Fake Data Generation
-  s.add_development_dependency 'ffaker'
-  s.add_development_dependency 'forgery', '0.5.0'
+  # s.add_development_dependency 'ffaker'
+  # s.add_development_dependency 'forgery', '0.5.0'
 
   # Test automation
   # s.add_development_dependency 'guard-rails' # See gemfile for a patched version, for engine support.

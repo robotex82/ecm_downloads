@@ -26,7 +26,7 @@ GIT
 PATH
   remote: .
   specs:
-    ecm_downloads (0.0.8.pre)
+    ecm_downloads (0.0.9.pre)
       active_admin-acts_as_list
       active_admin-awesome_nested_set
       acts_as_list (~> 0.1.6)
@@ -127,9 +127,7 @@ GEM
       factory_girl (~> 2.6.0)
       railties (>= 3.0.0)
     fastercsv (1.5.5)
-    ffaker (1.15.0)
     ffi (1.3.1)
-    forgery (0.5.0)
     formtastic (2.2.1)
       actionpack (>= 3.0)
     friendly_id (4.0.9)
@@ -284,8 +282,6 @@ DEPENDENCIES
   coffee-rails
   ecm_downloads!
   factory_girl_rails (~> 1.0)
-  ffaker
-  forgery (= 0.5.0)
   guard-bundler
   guard-rails!
   guard-rspec
