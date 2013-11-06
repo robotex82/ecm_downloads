@@ -62,7 +62,7 @@ class Ecm::Downloads::Download < ActiveRecord::Base
   friendly_id :name, :use => :slugged
 
   # paperclip
-  has_attached_file :asset
+  has_attached_file :asset, Ecm::Downloads::Configuration.paperclip_options
 
   # validations
   validates :ecm_downloads_download_category, :presence => true

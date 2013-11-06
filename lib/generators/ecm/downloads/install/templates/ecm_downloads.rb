@@ -1,2 +1,7 @@
 Ecm::Downloads.configure do |config|
-end
+  # options for paperclip
+  #
+  # default: {}
+  config.paperclip_options = {}
+end # Ecm::Downloads.configure
+

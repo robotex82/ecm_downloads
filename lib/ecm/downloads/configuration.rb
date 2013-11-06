@@ -7,10 +7,11 @@ module Ecm
     module Configuration
       def configure
         yield self
-      end
+      end # def
 
-      # mattr_accessor :foo
-      # @@foo = nil
-    end
-  end
-end
+       mattr_accessor :paperclip_options
+       @@paperclip_options = {}
+    end # module Configuration
+  end # module Downloads
+end # module Ecm
+
